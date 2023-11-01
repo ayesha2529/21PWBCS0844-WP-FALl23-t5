@@ -1,0 +1,168 @@
+// Variables
+$font-stack: 'Arial', sans-serif;
+$background1: light pink;
+$background2:  white;
+$card-color: white;
+
+// Body Styles
+body {
+    font-family: $font-stack;
+    background-color: $background1;
+    margin: 0;
+    padding: 0;
+}
+
+// Mixins
+@mixin Paragraph_style {
+    color: purple;
+    font-size: 16px;
+    text-align: center;
+}
+
+@mixin caption_style {
+    line-height: 1.5;
+    padding-top: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: purple;
+}
+
+section {
+    padding: 30px;
+    h2 {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        color: purple;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 5px;
+        color: purple; 
+    }
+
+    p {
+        @include Paragraph_style;
+        color: black; 
+    }
+}
+
+
+// Header
+#header {
+    text-align: center;
+
+    img {
+        max-width: 10%;
+        height: 10;
+        border-radius: 70%;
+    }
+}
+
+// Navigation Bar
+#nav {
+    img {
+        max-width: 60px;
+        height: 70;
+    }
+
+    ul {
+        text-align: center;
+    }
+}
+
+// Home
+#home {
+    background-color: white;
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .image-container {
+        background-color: burlywood; 
+        padding: 30px; 
+    }
+
+    .caption {
+        @include caption_style;
+        color: purple; 
+    }
+}
+
+
+// Menu
+#menu {
+    background-color: white;
+
+    #card {
+        margin-top: 20px;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        margin: 5px;
+    }
+    .image-container {
+        background-color: burlywood; 
+        padding: 30px; 
+    }
+}
+
+// About Us
+#team {
+    img {
+        display: block;
+        width: 100%;
+        margin: 5px;
+    }
+
+    .image-container {
+        background-color: burlywood; 
+        padding: 30px; 
+    }
+}
+
+
+
+// Contact Us
+#contact {
+    text-align: center;
+    margin: 10px;
+
+    #form {
+        padding: 20px 35px;
+        background-color: burlywood;
+        max-width: 500px;
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            color: black; 
+        }
+
+        input,
+        textarea {
+            margin: 10px 0;
+            border: 2px solid black;
+            width: 100%;
+            padding: 10px;
+            color: black; 
+        }
+    }
+}
+
+// Footer
+#footer {
+    background-color:rgb(241, 182, 104);
+ .footer-section {
+        text-align: center;
+        }
+    }
+
